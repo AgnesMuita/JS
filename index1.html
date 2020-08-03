@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.html/scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" class="demoForm" id="pizzaForm">
+        <fieldset>
+        <legend>Example Form: Order Pizza</legend>
+        
+        <p>Size:
+            <label><input type="radio" name="size" value="5" /> Small</label>
+            <label><input type="radio" name="size" value="8" checked="checked" /> Medium</label>
+            <label><input type="radio" name="size" value="12" /> Large</label>
+            <input type="hidden" name="sz_tot" value="0.00" />
+        </p>
+        
+        <p id="pizza_toppings">Toppings:
+            <label><input type="checkbox" name="mushrooms" value=".40" /> mushrooms</label>
+            <label><input type="checkbox" name="onions" value=".30" /> onions</label>
+            <label><input type="checkbox" name="black_olives" value=".40" /> black olives</label>
+            <label><input type="checkbox" name="sausage" value=".50" /> sausage</label>
+            <label><input type="checkbox" name="pepperoni" value=".50" /> pepperoni</label>
+            <input type="hidden" name="tops_tot" value="0.00"/>
+        </p>
+
+        <p id="pizza_crust">Crust:
+            <label><input type="checkbox" name="Cheese-Stuffed-Crust" value=".40" /> Cheese-Stuffed-Crust</label>
+            <label><input type="checkbox" name="Flatbread" value=".40" /> Flatbread</label>
+            <label><input type="checkbox" name="Thin-Crust" value=".40" /> Thin-Crust</label>
+            <label><input type="checkbox" name="Silician-Style" value=".50" /> Silician-Style</label>
+            <label><input type="checkbox" name="Pizza-Bagels" value=".50" /> Pizza-Bagels</label>
+            <input type="hidden" name="crust_tot" value="0.00" />
+        </p>
+        
+        <p><label>Total: $<input type="text" name="total" class="num" value="0.00" readonly="readonly" /></label></p>
+        
+        <p><input type="submit" name="submit" value="Submit" onsubmit="Calcula"></p>
+        
+        </fieldset>
+    </form>
+</body>
+</html>
